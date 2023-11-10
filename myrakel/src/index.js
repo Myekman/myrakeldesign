@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { Gallery } from './App';
-import { Navbar } from './App';
+// import { Gallery } from './App';
+
+import { Gallery } from './pages/Galleri';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
@@ -14,7 +15,7 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App />} />
-      <Route exact path="/gallery" element={<Gallery />} />
+      <Route exact path="/galleri" element={<Gallery />} />
     </Routes>
     </BrowserRouter>,
   </React.StrictMode>
