@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-// import { Gallery } from './App';
 
 import { Gallery } from './pages/Galleri';
 import reportWebVitals from './reportWebVitals';
