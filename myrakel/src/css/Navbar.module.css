@@ -9,3 +9,8 @@ body {
 .navbar {
     color: red;
 }
+
+.hashlink {
+    color: black;
+    text-decoration: none;
+}

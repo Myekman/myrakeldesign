@@ -14,7 +14,7 @@ export function Projects() {
                     <img className="img-fluid mb-3 mb-lg-0" src={Tavla1} alt="..." />
                 </div>
                 <div className="col-xl-4 col-lg-5">
-                    <div data-aos="fade-up" data-aos-duration="1000" className="featured-text text-center text-lg-left">
+                    <div data-aos="fade-up" data-aos-duration="1000" className={`${styles.featured} text-center text-lg-left`}>
                         <h4>Specialbeställ din tavla</h4>
                         <p className="text-black-50 mb-0">Letar du efter en tavla med ett speciellt mått eller har du kankse önskemål på kulörer. Inga problem! Jag målar på beställning efter dina visioner.  </p>
                         <hr />
@@ -31,7 +31,7 @@ export function Projects() {
                 <div className="col-lg-6">
                     <div className="bg-black text-center h-100 project">
                         <div className="d-flex h-100">
-                            <div data-aos="zoom-in" data-aos-duration="1000" className="project-text w-100 my-auto text-center text-lg-left">
+                            <div data-aos="zoom-in" data-aos-duration="1000" className={`${styles.projecttext} w-100 my-auto text-center text-lg-left`}>
                                 <h4 className="text-white">Minimalistisk</h4>
                                 <p className="mb-0 text-white-50">En tavelstil för dig som vill ha ett enkelt stilrent intryck. När jag målar den här typen av tavlor gillar jag att jobba med struktur för att få till ett liv i konstverket.</p>
                             </div>

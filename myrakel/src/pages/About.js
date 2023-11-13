@@ -1,5 +1,6 @@
 
 import aboutstyle from "../css/About.module.css";
+import Logo from '../images/loggatransmini.png';
 
 export function About() {
     return (
@@ -11,7 +12,7 @@ export function About() {
                             <p>lorem mkmic cjw cdmoe mcm cnjjne jek v jkevjkfe fjkvf njvnfj fj dfff ggg kenf</p>
                         </div>
                         <div className={aboutstyle.logocontainer}>
-                        <img className="img-fluid" src="../../public/images/loggatransmini.png" alt="..." />
+                        <img className="img-fluid" src={Logo} alt="logga" />
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,17 @@
+.signupsection {
+    padding: 10rem 0;
+    background-color: #000;
+  }
+
+.buttonwhite {
+    position: absolute;
+    background-color:#fff;
+    color: black;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    text-decoration: none;
+    width: 95%;
+}
