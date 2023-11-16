@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-
+import DetailPage from './pages/DetailPage';
 import { Gallery } from './pages/Galleri';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,6 +15,7 @@ root.render(
     <Routes>
       <Route exact path="/" element={<App />} />
       <Route exact path="/galleri" element={<Gallery />} />
+      <Route path="/galleri/:DetailId" element={<DetailPage />} />
     </Routes>
     </BrowserRouter>,
   </React.StrictMode>

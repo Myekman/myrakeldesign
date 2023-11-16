@@ -1,0 +1,13 @@
+[
+    {
+        "id": "1",
+        "title": "Tavla 1",
+        "image": "../images/tavlagr.jpg"
+
+    },
+    {
+        "id": "2",
+        "title": "Tavla 2",
+        "image": "../images/tavlagr.jpg"
+    }
+]
