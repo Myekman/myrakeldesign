@@ -4,7 +4,7 @@ import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './components/Contact';
 import Gallery from './components/Gallery';
-import DetailPage from './pages/DetailPage';
+import PaintingDetail from './components/PaintingDetail';
 
 /* <section id={gallerystyle.sliderbody}>
     <div className={gallerystyle.slider}>
@@ -40,7 +40,7 @@ function App() {
       <Projects />
       <Contact />
       <Gallery />
-      <DetailPage />
+      <PaintingDetail />
     </div>
   );
 }

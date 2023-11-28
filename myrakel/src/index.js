@@ -2,13 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import DetailPage from './pages/DetailPage';
-import { Galleri } from './pages/Galleri';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Gallery from './components/Gallery';
 import paintingsData from './data/paintingsData';
+import PaintingDetail from './components/PaintingDetail';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,14 +16,13 @@ root.render(
     <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App />} />
-      <Route exact path="/galleri" element={<Galleri />} />
-      <Route path="/galleri/:DetailId" element={<DetailPage />} />
 
       <Route
       path="/gallery"
       element={<Gallery paintingsData={paintingsData} />}
       />
-      <Route path="/gallery/:id" component={<DetailPage />} />
+
+     <Route path="/gallery/:paintingId" element={<PaintingDetail paintingsData={paintingsData} />} />
     </Routes>
     </BrowserRouter>,
   </React.StrictMode>
