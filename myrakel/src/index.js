@@ -8,6 +8,8 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Gallery from './components/Gallery';
+import paintingsData from './data/paintingsData';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,8 +20,11 @@ root.render(
       <Route exact path="/galleri" element={<Galleri />} />
       <Route path="/galleri/:DetailId" element={<DetailPage />} />
 
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/gallery/:DetailId" element={<DetailPage />} />
+      <Route
+      path="/gallery"
+      element={<Gallery paintingsData={paintingsData} />}
+      />
+      <Route path="/gallery/:id" component={<DetailPage />} />
     </Routes>
     </BrowserRouter>,
   </React.StrictMode>

@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/esm/Container';
 import gallerystyle from '../css/Gallery.module.css';
-import paintingsData from '../data/paintingsData';
+// import paintingsData from '../data/paintingsData';
 import BasicNavbar from './Navbar';
 
 
-const Gallery = () => {
+const Gallery = ( { paintingsData }) => {
   return (
     <div>
       {/* ... */}

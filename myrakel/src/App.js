@@ -3,6 +3,8 @@ import { Heading } from './pages/Heading';
 import { About } from './pages/About';
 import { Projects } from './pages/Projects';
 import { Contact } from './components/Contact';
+import Gallery from './components/Gallery';
+import DetailPage from './pages/DetailPage';
 
 /* <section id={gallerystyle.sliderbody}>
     <div className={gallerystyle.slider}>
@@ -37,6 +39,8 @@ function App() {
       <About />
       <Projects />
       <Contact />
+      <Gallery />
+      <DetailPage />
     </div>
   );
 }
