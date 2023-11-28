@@ -4,7 +4,8 @@ import { useParams } from 'react-router-dom';
 
 const PaintingDetail = ({ paintingsData }) => {
   const { paintingId } = useParams();
-  const painting = paintingsData.find((p) => p.id === parseInt(paintingId));
+  const painting = paintingsData && paintingsData.find((p) => p.id === parseInt(paintingId));
+
 
   if (!painting) {
     return <p>Painting not found.</p>;
@@ -16,6 +17,7 @@ const PaintingDetail = ({ paintingsData }) => {
       <img src={painting.src} alt={painting.title} />
       {/* Add other painting details as needed */}
     </div>
+    
   );
 };
 
