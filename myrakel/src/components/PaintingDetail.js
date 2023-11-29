@@ -1,23 +1,21 @@
 // PaintingDetail.js
 import React from 'react';
-import { useParams } from 'react-router-dom';
 
-const PaintingDetail = ({ paintingsData }) => {
-  const { paintingId } = useParams();
-  const painting = paintingsData && paintingsData.find((p) => p.id === parseInt(paintingId));
-
-
-  if (!painting) {
-    return <p>Painting not found.</p>;
+const PaintingDetail = ({ paintingsData, selectedPainting }) => {
+  // Check if selectedPainting is defined and has the expected properties
+  if (!selectedPainting || !selectedPainting.id) {
+    return <div>Error: Invalid painting selected.</div>;
   }
+
+  // Access the selected painting and paintingsData
+  const paintingDetails = paintingsData.find(painting => painting.id === selectedPainting.id);
 
   return (
     <div>
-      <h2>{painting.title}</h2>
-      <img src={painting.src} alt={painting.title} />
-      {/* Add other painting details as needed */}
+      <h2>{paintingDetails.title}</h2>
+      <img src={paintingDetails.src} alt={paintingDetails.title} />
+      {/* Display other details if needed */}
     </div>
-    
   );
 };
 

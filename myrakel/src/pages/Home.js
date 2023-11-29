@@ -1,7 +1,9 @@
+import Contact from '../components/Contact';
 import homestyle from '../css/Home.module.css';
+import About from './About';
+import Projects from './Projects';
 
-
-export function Heading() {
+const Home = () => {
     return (
     <div>
             <div className={`${homestyle.masthead} d-block d-xl-none`}>
@@ -27,6 +29,11 @@ export function Heading() {
                 </div>
                 <div className={`${homestyle.masthead} col-sm d-none d-xl-block`}></div>
               </div>
+              <About />
+              <Projects />
+              <Contact />
     </div>
     );
   }
+
+  export default Home;

@@ -1,6 +1,6 @@
 import styles from '../css/Contact.module.css';
 
-export function Contact() {
+const Contact = () => {
     return (
         <section className={styles.signupsection} id="signup">
         <div className="container px-4 px-lg-5">
@@ -34,3 +34,5 @@ export function Contact() {
     </section>
     )
 }
+
+export default Contact;

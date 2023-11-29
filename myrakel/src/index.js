@@ -4,16 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
-import Gallery from './components/Gallery';
-import paintingsData from './data/paintingsData';
-import PaintingDetail from './components/PaintingDetail';
+import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter, Routes, Route} from "react-router-dom";
+// import Gallery from './components/Gallery';
+// import paintingsData from './data/paintingsData';
+// import PaintingDetail from './components/PaintingDetail';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
+      <App />
+    </Router>
+    {/* <BrowserRouter>
     <Routes>
       <Route exact path="/" element={<App />} />
 
@@ -22,9 +26,9 @@ root.render(
       element={<Gallery paintingsData={paintingsData} />}
       />
 
-     <Route path="/gallery/:paintingId" element={<PaintingDetail paintingsData={paintingsData} />} />
+     <Route path="/gallery/:id" element={<PaintingDetail paintingsData={paintingsData} />} />
     </Routes>
-    </BrowserRouter>,
+    </BrowserRouter>, */}
   </React.StrictMode>
 );
 

@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/esm/Container';
 import gallerystyle from '../css/Gallery.module.css';
-import BasicNavbar from './Navbar';
 
 import Tavla1 from '../images/tavlagr.jpg';
 import Tavla2 from '../images/tavlabrun.jpg';
@@ -29,7 +28,6 @@ const Gallery = () => {
   return (
     <div>
       {/* ... */}
-      <BasicNavbar />
       <Container className={gallerystyle.gallerycontainer}>
         <section>
           <div className={gallerystyle.gallery}>
@@ -47,12 +45,14 @@ const Gallery = () => {
                       onClick={() => handlePaintingClick(painting)}
                     />
                     <div className={gallerystyle.titlecontainer}>
-                      <Link
-                        to={`/gallery/${painting.id}`}
-                        state={{ painting }} // Pass painting details as state
-                      >
-                        <h5 className="title">{painting.title}</h5>
-                      </Link>
+                    <Link
+                      to={{
+                        pathname: `/gallery/${painting.id}`,
+                        state: { paintingsData, selectedPainting: painting },
+                      }}
+                    >
+                      <h5 className="title">{painting.title}</h5>
+                    </Link>
                     </div>
                   </div>
                 ))}
@@ -65,7 +65,7 @@ const Gallery = () => {
 
       {/* Optionally, render the PaintingDetail component conditionally */}
       {selectedPainting && (
-        <PaintingDetail painting={selectedPainting} />
+        <PaintingDetail paintingsData={paintingsData} selectedPainting={selectedPainting} />
       )}
     </div>
   );

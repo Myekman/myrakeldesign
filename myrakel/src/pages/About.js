@@ -2,7 +2,7 @@
 import aboutstyle from "../css/About.module.css";
 import Logo from '../images/loggatransmini.png';
 
-export function About() {
+const About = () => {
     return (
         <div>
                 <div className={`${aboutstyle.about} text-center`} id="about">
@@ -19,3 +19,5 @@ export function About() {
         </div>
     )
 }
+
+export default About;

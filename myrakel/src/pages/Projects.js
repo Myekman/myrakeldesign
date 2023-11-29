@@ -4,7 +4,7 @@ import Tavla2 from '../images/tavlabrun.jpg';
 import Tavla3 from '../images/tavlama.jpg';
 import Tavla4 from '../images/abstrakt.jpg';
 
-export function Projects() {
+const Projects = () => {
     return (
         <section className={`${styles.projects} bg-light`}  id="projects">
         <div className="container px-4 px-lg-5">
@@ -76,3 +76,5 @@ export function Projects() {
 
     )
 }
+
+export default Projects;
