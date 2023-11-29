@@ -1,29 +1,10 @@
 // Gallery.js
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/esm/Container';
 import gallerystyle from '../css/Gallery.module.css';
-
-import Tavla1 from '../images/tavlagr.jpg';
-import Tavla2 from '../images/tavlabrun.jpg';
-import Tavla3 from '../images/tavlaröd.jpg';
-import Tavla4 from '../images/tavlama.jpg';
-import PaintingDetail from './PaintingDetail';
-
-const paintingsData = [
-  { id: 1, src: Tavla1, title: "Green Forrest" },
-  { id: 2, src: Tavla2, title: "Brownie" },
-  { id: 3, src: Tavla3, title: "Red Love" },
-  { id: 4, src: Tavla4, title: "Swirl" },
-  // Add more paintings as needed
-];
+import paintingsData from '../data/paintingsData';
 
 const Gallery = () => {
-  const [selectedPainting, setSelectedPainting] = useState(null);
-
-  const handlePaintingClick = (painting) => {
-    setSelectedPainting(painting);
-  };
 
   return (
     <div>
@@ -42,17 +23,11 @@ const Gallery = () => {
                       className={`${gallerystyle.fixedSizeImage} img-fluid mb-3 mb-lg-0`}
                       src={painting.src}
                       alt={painting.title}
-                      onClick={() => handlePaintingClick(painting)}
                     />
                     <div className={gallerystyle.titlecontainer}>
-                    <Link
-                      to={{
-                        pathname: `/gallery/${painting.id}`,
-                        state: { paintingsData, selectedPainting: painting },
-                      }}
-                    >
-                      <h5 className="title">{painting.title}</h5>
-                    </Link>
+                    <Link to={`/gallery/${painting.id}`}>
+                        <h5 className="title">{painting.title}</h5>
+                      </Link>
                     </div>
                   </div>
                 ))}
@@ -63,10 +38,7 @@ const Gallery = () => {
       </Container>
       {/* ... */}
 
-      {/* Optionally, render the PaintingDetail component conditionally */}
-      {selectedPainting && (
-        <PaintingDetail paintingsData={paintingsData} selectedPainting={selectedPainting} />
-      )}
+    
     </div>
   );
 };

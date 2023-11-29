@@ -8,7 +8,6 @@ import Contact from './components/Contact';
 import About from './pages/About';
 import Gallery from './components/Gallery';
 import PaintingDetail from './components/PaintingDetail';
-import paintingsData from './data/paintingsData';
 
 function App() {
   return (
@@ -19,8 +18,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery paintingsData={paintingsData} />} />
-        <Route path="/gallery/:id" element={<PaintingDetail paintingsData={paintingsData} />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery/:id" element={<PaintingDetail />} />
       </Routes>
     </div>
   );
