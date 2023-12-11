@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
 import styles from '../css/Project.module.css';
 import Tavla1 from '../images/tavlagr.jpg';
 import Tavla2 from '../images/tavlabrun.jpg';
 import Tavla3 from '../images/tavlama.jpg';
 import Tavla4 from '../images/abstrakt.jpg';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Projects = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
     return (
         <section className={`${styles.projects} bg-light`}  id="projects">
         <div className="container px-4 px-lg-5">
