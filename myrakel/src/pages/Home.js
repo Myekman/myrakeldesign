@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import Contact from '../components/Contact';
 import homestyle from '../css/Home.module.css';
 import About from './About';
 import Projects from './Projects';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Home = () => {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh(); // Optionally refresh AOS after the initial render
+      }, []);
     return (
     <div>
             <div className={`${homestyle.masthead} d-block d-xl-none`}>
