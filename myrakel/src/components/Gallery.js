@@ -17,7 +17,7 @@ const Gallery = () => {
                 {paintingsData.map((painting) => (
                   <div
                     key={painting.id}
-                    className={`${gallerystyle.tavlacontainer} col-xs-12 col-lg-3`}
+                    className={`${gallerystyle.tavlacontainer} col-xs-12 col-lg-3 col-md-6 mt-4`}
                   >
                     <img
                       className={`${gallerystyle.fixedSizeImage} img-fluid mb-3 mb-lg-0`}

@@ -1,0 +1,26 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 30px;
+    background-color: black;
+    
+}
+
+.imagesize {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.details {
+    color: white;
+}
+
+/* Media query for screens 766 pixels and below */
+@media (max-width: 360px) {
+    .card {
+      padding: 20px; 
+    }
+  }

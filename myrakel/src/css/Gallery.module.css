@@ -30,8 +30,9 @@
 
 /* Gallery.module.css */
 .gallery .fixedSizeImage {
-  height: 300px;
-  object-fit: fill;
+  height:300px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .titlecontainer a {
@@ -41,4 +42,11 @@
 
 .titlecontainer a:hover {
   color: #ff0000; /* Change the text color on hover to your desired color */
+}
+
+/* Media query for screens 766 pixels and below */
+@media (max-width: 766px) {
+  .gallery .fixedSizeImage {
+    height: 100%; 
+  }
 }
