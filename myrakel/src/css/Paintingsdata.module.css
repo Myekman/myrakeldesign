@@ -9,14 +9,14 @@
     margin-top: 50px;
     padding-left: 50px;
     padding-bottom: 50px;
-    background-color: black;
+    background-color: #eeeeee;
     
 }
 
 .detailtitle {
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #ffffff !important;
+    /* color: #ffffff !important; */
 }
 
 
@@ -24,17 +24,23 @@
     height: 300px;
     width: 100%;
     object-fit: cover;
+    /* transition: transform 0.3s ease;
+    overflow: hidden; */
 }
+  
+/* .imagesize:hover {
+transform: scale(1.5); 
+} */
 
 .infoPaintingContainer {
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    
 }
 
-.details {
+/* .details {
     color: white;
-}
+} */
 
 /* Media query for screens 766 pixels and below */
 @media (max-width: 576px) {

@@ -1,8 +1,8 @@
 // PaintingDetail.js
-import React from 'react';
 import paintingsData from '../data/paintingsData';
 import { useParams } from 'react-router-dom';
-// import Container from 'react-bootstrap/esm/Container';
+
+// import Detalj1 from '../images/tavlagr.jpg';
 
 import style from '../css/Paintingsdata.module.css';
 
@@ -21,15 +21,15 @@ const PaintingDetail = () => {
         <div className={style.card}>
           <div className='card-body'>
             <h1 className={style.detailtitle}>{painting.title}</h1>
-            
+
               <div className="row">
                 <div className="col-sm-4">
                   <div className='imagecontainer'>
-                      <img
-                        className={`${style.imagesize} img-fluid mb-3 mb-lg-0`}
-                        src={painting.src}
-                        alt={painting.title}
-                      />
+                  <img
+                    className={`${style.imagesize} img-fluid mb-3 mb-lg-0`}
+                    src={painting.src}
+                    alt={painting.title}
+                  />
                   </div>
                 </div>
 
@@ -38,7 +38,7 @@ const PaintingDetail = () => {
                     <h3 className={style.details}>Hello details here</h3>
                       <div className="row">
                         <div className="col-12">
-                          <p className='text-white'>{painting.size}</p>
+                          <p>{painting.size}</p>
                         </div>
                       </div>
                   </div>
