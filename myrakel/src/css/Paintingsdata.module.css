@@ -8,7 +8,8 @@
     flex-direction: column;
     margin-top: 50px;
     padding-left: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+    padding-right: 50px;
     background-color: #eeeeee;
     
 }
@@ -35,7 +36,20 @@ transform: scale(1.5);
 .infoPaintingContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     
+}
+
+.buttonwhite {
+    position: absolute;
+    background-color:#fff;
+    color: black;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    text-decoration: none;
 }
 
 /* .details {
@@ -56,3 +70,12 @@ transform: scale(1.5);
         margin-top: 20px;
     }
   }
+
+/* Media query for screens 766 pixels and below */
+@media (max-width: 768px) {
+    .infoPaintingContainer {
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+}

@@ -7,7 +7,7 @@ const Contact = () => {
             <div className="row gx-4 gx-lg-5">
                 <div className="col-md-10 col-lg-8 mx-auto text-center">
                     <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                    <h2 className="text-white mb-5">Skicka din förfrågan här!</h2>
+                    <h2 className={`${styles.title} mb-5`}>Skicka din förfrågan här!</h2>
                     
                     <form action="https://formsubmit.co/myekman5@gmail.com" method="POST">
                         <div className="mb-3">
