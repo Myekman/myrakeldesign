@@ -5,30 +5,27 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import { BrowserRouter, Routes, Route} from "react-router-dom";
-// import Gallery from './components/Gallery';
-// import paintingsData from './data/paintingsData';
-// import PaintingDetail from './components/PaintingDetail';
 
+import { CloudinaryContext } from "cloudinary-react";
+import dotenv from "dotenv";
+
+// Load environment variables from .env
+dotenv.config();
+
+const cloudinaryConfiguration = {
+  cloudName: process.env.REACT_APP_CLOUDINARY_CLOUD_NAME,
+  apiKey: process.env.REACT_APP_CLOUDINARY_API_KEY,
+  apiSecret: process.env.REACT_APP_CLOUDINARY_API_SECRET,
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-    {/* <BrowserRouter>
-    <Routes>
-      <Route exact path="/" element={<App />} />
-
-      <Route
-      path="/gallery"
-      element={<Gallery paintingsData={paintingsData} />}
-      />
-
-     <Route path="/gallery/:id" element={<PaintingDetail paintingsData={paintingsData} />} />
-    </Routes>
-    </BrowserRouter>, */}
+    <CloudinaryContext {...cloudinaryConfiguration}>
+      <Router>
+        <App />
+      </Router>
+    </CloudinaryContext>
   </React.StrictMode>
 );
 
