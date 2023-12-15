@@ -30,9 +30,16 @@ const PaintingDetail = () => {
                     alt={painting.title}
                   />
                   </div>
+                  <div className='imagecontainer mt-4'>
+                  <img
+                    className={`${style.imagesize} img-fluid mb-3 mb-lg-0`}
+                    src={painting.src}
+                    alt={painting.title}
+                  />
+                  </div>
                 </div>
 
-                <div className={`${style.infoPaintingContainer} col-md-5`}>
+                <div className={`${style.infoPaintingContainer} col-xl-5 col-sm-12 mt-4`}>
                   <div>
                     <h3 className={style.details}>Skicka din förfrågan här:</h3>
                       <div className="row">
@@ -70,9 +77,9 @@ const PaintingDetail = () => {
                         </div>
                       </div>
                   </div>
-
                 </div>
             </div>
+
           </div>
         </div>
         

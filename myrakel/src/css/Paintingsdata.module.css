@@ -1,5 +1,6 @@
 .container {
-    padding: 0px 50px;
+    padding: 0px 80px;
+    height: 100vh;
 }
 
 .card {
@@ -34,9 +35,10 @@ transform: scale(1.5);
 } */
 
 .infoPaintingContainer {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     
 }
 
@@ -59,20 +61,18 @@ transform: scale(1.5);
 /* Media query for screens 766 pixels and below */
 @media (max-width: 576px) {
     .card {
-      padding: 20px; 
+      padding: 20px;
+      margin-top: 0px;
+      padding-bottom: 200px;
     }
 
     .container {
         padding: 0px;
     }
-
-    .card {
-        margin-top: 20px;
-    }
   }
 
 /* Media query for screens 766 pixels and below */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .infoPaintingContainer {
         display: flex;
         justify-content: flex-start;
