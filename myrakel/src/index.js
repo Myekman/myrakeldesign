@@ -6,17 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { CloudinaryContext } from "cloudinary-react";
-import dotenv from "dotenv";
+import { CloudinaryContext } from 'cloudinary-react';
+import cloudinaryConfiguration from './cloudinaryConfig';
 
-// Load environment variables from .env
-dotenv.config();
-
-const cloudinaryConfiguration = {
-  cloudName: process.env.REACT_APP_CLOUDINARY_CLOUD_NAME,
-  apiKey: process.env.REACT_APP_CLOUDINARY_API_KEY,
-  apiSecret: process.env.REACT_APP_CLOUDINARY_API_SECRET,
-};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

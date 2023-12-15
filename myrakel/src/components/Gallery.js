@@ -6,6 +6,9 @@ import paintingsData from '../data/paintingsData';
 
 import { Image } from 'cloudinary-react';
 
+// Import cloudinaryConfiguration
+import cloudinaryConfiguration from '../cloudinaryConfig';
+
 const Gallery = () => {
 
   return (
