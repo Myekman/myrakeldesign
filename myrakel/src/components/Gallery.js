@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/esm/Container';
 import gallerystyle from '../css/Gallery.module.css';
 import paintingsData from '../data/paintingsData';
 
-import { Image } from 'cloudinary-react';
+// import { Image } from 'cloudinary-react';
 
-// Import cloudinaryConfiguration
-import cloudinaryConfiguration from '../cloudinaryConfig';
+// // Import cloudinaryConfiguration
+// import cloudinaryConfiguration from '../cloudinaryConfig';
 
 const Gallery = () => {
 
@@ -24,17 +24,17 @@ const Gallery = () => {
                     key={painting.id}
                     className={`${gallerystyle.tavlacontainer} col-xs-12 col-lg-3 col-md-6 mt-4`}
                   >
-                    {/* <img
+                    <img
                       className={`${gallerystyle.fixedSizeImage} img-fluid mb-3 mb-lg-0`}
                       src={painting.src}
                       alt={painting.title}
-                    /> */}
-                    <Image
+                    />
+                    {/* <Image
                       className={`${gallerystyle.fixedSizeImage} img-fluid mb-3 mb-lg-0`}
                       cloudName={cloudinaryConfiguration.cloudName}
                       publicId={painting.publicId} // Replace with your Cloudinary public ID
                       alt={painting.title}
-                    />
+                    /> */}
                     <div className={gallerystyle.titlecontainer}>
                     <Link to={`/gallery/${painting.id}`}>
                         <h5 className="title">{painting.title}</h5>
