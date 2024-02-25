@@ -19,11 +19,12 @@
     padding: 30px;
    }
 
-.hittakonstmobil {
+
+/* .hittakonstmobil {
   margin-top: 350px;
   display: flex;
   justify-content: center;
-}
+} */
 
 .hittakonst {
     margin-top: 100px;
@@ -40,11 +41,31 @@
     justify-content: flex-end;
 }
 
+.containermobile {
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: #ffffff78;
+  padding: 20px 20px 120px 20px;
+  border-radius: 10px; */
+ 
+
+}
+
+.hittakonstmobile {
+  /* padding: 50px; */
+  background-color: #4d474e78;
+  color: #E9E6DE;
+  padding: 20px 20px 120px 20px;
+  border-radius: 10px;
+
+}
+
 .button {
   position: absolute;
   top:60%;
-  background-color:#0a0a23;
-  color: #fff;
+  background-color:#716789;
+  color: #E9E6DE;
   border:none; 
   border-radius:10px; 
   padding:15px;
@@ -56,8 +77,8 @@
 
 .button2 {
   position: absolute;
-  background-color:#0a0a23;
-  color: #fff;
+  background-color:#716789;
+  color: #E9E6DE;
   border:none; 
   border-radius:10px; 
   padding:15px;

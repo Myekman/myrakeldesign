@@ -1,6 +1,6 @@
 .signupsection {
     padding: 10rem 0;
-    background-color: #000;
+    background-color: #716789;
   }
 
 .buttonwhite {
@@ -21,6 +21,11 @@
 }
 
 .title {
-  color: #E9E6DE;
+  color: white;
+}
+
+.inputstyle {
+  background-color: #f9e4ff66 !important;
+
 }
 

@@ -11,16 +11,16 @@ const Contact = () => {
                     
                     <form action="https://formsubmit.co/myekman5@gmail.com" method="POST">
                         <div className="mb-3">
-                            <input type="email" name="email" className="form-control" id="exampleFormControlInput1" placeholder="Email Adress" required />
+                            <input type="email" name="email" className={`${styles.inputstyle} form-control`} id="exampleFormControlInput1" placeholder="Email Adress" required />
                         </div>
                         <div className="mb-3">
-                            <input type="text" name="namel" className="form-control" id="exampleFormControlInput1" placeholder="Name" required />
+                            <input type="text" name="namel" className={`${styles.inputstyle} form-control`}  id="exampleFormControlInput1" placeholder="Name" required />
                         </div>
                         <div className="mb-3">
-                            <input type="text" name="title" className="form-control" id="exampleFormControlInput2" placeholder="Tavla / Specialbeställning" required />
+                            <input type="text" name="title" className={`${styles.inputstyle} form-control`}  id="exampleFormControlInput2" placeholder="Tavla / Specialbeställning" required />
                         </div>
                         <div className="mb-3">
-                            <textarea className="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Skriv din förfrågan här..."></textarea>
+                            <textarea className={`${styles.inputstyle} form-control`} name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Skriv din förfrågan här..."></textarea>
                         </div>
 
                         <input type="hidden" name="_next" value="https://8000-myekman-myochmarcus-ooe3m6xlz3w.ws-eu105.gitpod.io/startbootstrap-grayscale-gh-pages/startbootstrap-grayscale-gh-pages/thankyou.html" />

@@ -4,16 +4,29 @@
   .projects .featured {
     padding: 2rem;
   }
+
+.projects .projecttext {
+  padding: 3rem;
+  font-size: 90%;
+  background-color: #E9E6DE;
+}
+
+.projectcontainer {
+  background-color: #E9E6DE !important;
+}
+
+body .bg-black {
+  --bs-bg-opacity: 1;
+  background-color: #E9E6DE !important;
+}
+
   @media (min-width: 992px) {
     .projects .featured {
       padding: 0 0 0 2rem;
-      border-left: 0.5rem solid #f8f1ca;
+      border-left: 0.5rem solid #716789;
     }
   }
-  .projects .projecttext {
-    padding: 3rem;
-    font-size: 90%;
-  }
+
   @media (min-width: 992px) {
     .projects .projecttext {
       padding: 5rem;
