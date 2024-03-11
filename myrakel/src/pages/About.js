@@ -14,7 +14,7 @@ const About = () => {
                 <div>
                     <div className="row justify-content-center text-white p-4">
                         <h1>My Ekman</h1>
-                        <p>lorem mkmic cjw cdmoe mcm cnjjne jek v jkevjkfe fjkvf njvnfj fj dfff ggg kenf</p>
+                        <p>Hej, mit namn är my ekman.</p>
                     </div>
                     <div className={aboutstyle.logocontainer}>
                         <img className="img-fluid" src={Logo} alt="logga" />
