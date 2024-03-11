@@ -51,6 +51,7 @@ const Home = () => {
                             <button type="button" href="#projects" className={`${homestyle.button2} mt-4`}>Discover</button>
                         </div>
                     </div>
+                    
               </div>
               <div className={`${homestyle.masthead3} d-block d-md-none`}>
                     <div className={homestyle.containermobile} data-aos="zoom-in" data-aos-duration="3000">
@@ -62,7 +63,6 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-
               </div>
               <About />
               <Projects />

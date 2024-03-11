@@ -10,6 +10,22 @@ body {
     color: red;
 }
 
+.hover {
+    transition: 0.5s ease-in-out;
+}
+
+.hover:hover {
+    transform: scale(1.2);
+}
+
+.logotransition {
+    transition: 0.5s ease-in-out; 
+  }
+  
+.logotransition:hover {
+    transform: scale(1.0);
+  }
+
 .hashlink {
     color: black;
     text-decoration: none;

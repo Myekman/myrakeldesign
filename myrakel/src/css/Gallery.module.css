@@ -38,10 +38,23 @@
 .titlecontainer a {
   text-decoration: none;
   color: #ffffff;
+
 }
 
 .titlecontainer a:hover {
-  color: #ff0000; /* Change the text color on hover to your desired color */
+  color: #474749fc;
+  transition: background-color 0.3s ease-in-out;
+  /* background-color: #474749fc; */
+  /* padding: 20px;
+  border-radius: 4px; */
+}
+
+.tavlacontainer img {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.tavlacontainer:hover img {
+  opacity: 0.5; 
 }
 
 /* Media query for screens 766 pixels and below */

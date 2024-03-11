@@ -4,10 +4,23 @@
   }
   
   .about {
-    padding-top: 10rem;
+    position: relative;
+    /* padding-top: 100px; */
     background-color: #716789;
-    /* background: linear-gradient(to bottom, #E9E6DE 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%); */
+  
   }
+  
   .about-section p {
     margin-bottom: 5rem;
   }
+
+  #wavebottom {
+    width: 100% !important;
+    height: auto;
+    /* margin-bottom: -20px !important; */
+}
+
+
+
+
+

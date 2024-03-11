@@ -14,7 +14,7 @@ const Projects = () => {
         AOS.refresh();
       }, []);
     return (
-        <section className={`${styles.projects} bg-light`}  id="projects">
+        <section className={`${styles.projects} bg-light`} id="projects">
         <div className="container px-4 px-lg-5">
             
             <div className="row gx-0 mb-4 mb-lg-5 align-items-center">
