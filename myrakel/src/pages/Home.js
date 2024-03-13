@@ -22,7 +22,7 @@ const Home = () => {
                     </div>
                 </div>
             </div> */}
-
+            
             <div className="row">
                 <div className={`${homestyle.masthead3} col-sm d-none d-md-block`}>
                     <div className={homestyle.container} data-aos="zoom-in" data-aos-duration="3000">

@@ -1,8 +1,8 @@
 
 import aboutstyle from "../css/About.module.css";
 import Logo from '../images/loggatransmini.png';
-import AnotherImageTop from '../images/våg.png';
-import AnotherImageBottom from '../images/bottom.png';
+import AnotherImageTop from '../images/vågny.png';
+import AnotherImageBottom from '../images/vågny1.png';
 
 const About = () => {
     return (
